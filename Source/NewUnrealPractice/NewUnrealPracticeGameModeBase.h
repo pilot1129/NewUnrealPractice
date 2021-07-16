@@ -13,5 +13,6 @@ UCLASS()
 class NEWUNREALPRACTICE_API ANewUnrealPracticeGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = UClassNames) TSubclassOf<UUserProfile> UPBlueprintClassName;
 };
